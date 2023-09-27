@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: netlifytrial-eb6t
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: netlifytrial-eb6t
+    app.kubernetes.io/part-of: netlifytrial-1
+  name: netlifytrial-eb6tgn0b
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: netlifytrial-eb6t
+    weight: null
+status: {}
